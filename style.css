@@ -1,0 +1,542 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "brandon-grotesque", sans-serif;
+    background-color: #D4E4EF;
+    color: #fff;
+}
+
+                                                        /* FORSIDE */
+/* Header */
+
+header{
+    display: flex;
+    justify-content: space-between; /* Logo til venstre, burger til højre */
+    align-items: center;
+    background-color: #2E4053;
+    padding: 1em 2em;
+}
+
+.logo{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.svg-jorden{
+    display: none;
+}
+
+#bars{ /* # bruges til at kalde på et id tag */
+        color: #fff;
+        background-color: #4F647A;
+        border: none; /* Fjerner linjen rundt om knap */
+        border-radius: 60px;
+        width: 90px;
+        height: 50px;
+        
+}
+
+#bars i{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.logo:hover, #bars i:hover{
+    color: #6A8AB8;
+    transition: 0.3s;
+}
+
+/* Navigationsbar */
+
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: #4F647A;
+   
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    list-style: none;
+    padding: 2em 0;
+    margin: 0;
+    width: 90%;
+    
+}
+
+nav ul li a{ /* nav --> ul --> li --> a */
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+nav ul li a:hover{
+    color: #6A8AB8;
+    transition: 0.3s;
+}
+
+.forside{
+    border-bottom: 4px solid #D4E4EF;
+}
+
+
+/* Banner billede */
+.banner{
+    background-image: url(img/IMG_8062.jpg);
+    background-size: cover;
+    background-position: left;
+    height: 50vh;
+}
+.banner h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    padding: 1.5em 1em;
+}
+
+/* Hovedindhold */
+
+/* Tekst felt - CRAFTPSYKOLOGI */
+.tekst-1, .tekst-3, .tekst-4{
+    background-color: #5A7896;
+    margin-top: 5em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.tekst-1 h2, .tekst-2 h2, .tekst-3 h2, .tekst-4 h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.break{
+    display: block;
+}
+
+.tekst-1 p, .tekst-2 p, .tekst-3 p, .tekst-4 p{
+    text-align: center;
+    font-size: 20px;
+    padding: 1em 2em;
+
+}
+
+.tekst-1 button{
+    background-color: #2E4053;
+    color: #fff;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 66px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "brandon-grotesque", sans-serif;
+    padding: 0.7em 1em;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.tekst-1 button:hover{
+    color: #6A8AB8;
+    transition: 0.3s;
+}
+
+/* Billeder */
+.billede {
+    width: 100%;
+    padding: 3em;
+    border-radius: 130px;
+}
+
+/* Tekst felt - AT SKABE NOGET */
+.tekst-2{
+    background-color: #5A7896;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+
+/* Footer */
+footer{
+    background-color: #2E4053;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+footer .logo-bund{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+.logo-bund:hover{
+    color: #6A8AB8;
+    transition: 0.3s;
+}
+
+.desktop-only{
+    display: none; /* vises ikke */
+}
+
+
+                                                        /* INFOSIDE */
+
+/* Overskrift */
+.info-overskrift{
+    text-align: center;
+    color: #2E4053;
+    font-size: 50px; /* ændret fra 60px */
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+/* Nav */
+
+.info-forside .forside{
+    border-bottom: none;
+}
+
+.info-nav{
+    border-bottom: 4px solid #D4E4EF;
+}
+
+/* Main */
+.ikoner img{
+    height: 200px;
+}
+
+.ikoner{
+    text-align: center;
+    
+}
+
+.ikoner p{
+    color: #2E4053;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.skabe, .flow, .ro{
+    margin: 4em;
+}
+
+.tekst-4{
+    margin-bottom: 4em;
+    margin-top: 0;
+}
+
+                                                        /* KONTAKTFORMULAR */
+
+/* Nav */
+
+.kontakt{
+    border-bottom: 4px solid #D4E4EF;
+    
+}
+
+/* Banner 2 */
+.banner-2{
+    background-image: url(img/kontakt.png);
+    background-size: cover;
+    background-position: left;
+    height: 50vh;
+}
+.banner-2 h1{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    padding: 4.5em 1em;
+}
+
+/* Kontaktformular */
+
+.kontaktform h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+.kontakt-tekst{
+    font-weight: 200;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.kontakt-tekst-2{
+    font-weight: 200;
+    font-size: 20px;
+    text-align: center;
+}
+
+.kontaktform {
+    border-radius: 40px;
+    background-color: #5A7896;
+    padding: 1.3em;
+    width: 70%; /* Fylder 70% af siden i bredden */
+    margin: 0 auto; /* Centrerer elementet på siden*/
+    padding: 2em 3em 2em;
+    margin-top: 2em;
+}
+
+input[type=text], input[type=email], input[type=tel], select, textarea{
+    width: 100%; /* fylder hele bredden i boksen */
+    padding: 1em; /* laver skrivefeltet større */
+    border: 2px solid #2E4053;  /* stroke rundt om felterne */
+    border-radius: 30px; /* afrundede kanter */
+    margin-top: 0.5em; /* afstand over feltet */
+    margin-bottom: 1em; /* afstand under feltet */
+}
+
+select, input[type=checkbox], input[type=radio], input[type=submit]{
+    cursor: pointer; /* Skaber brugervenlighed så man kan se at man kan trykke på knappen */    
+}
+
+fieldset{
+    border-style: hidden; /* stroke rundt om feltet - skriv "hidden" i stedet for "dotted" hvis den ikke skal være der */
+    margin-bottom: 0.8em; /* mere plads under fieldset (begge) */
+}
+
+input[type=checkbox]{
+    margin: 0.8em 0; /* mere plads i top og bund men ingenting i siderne */
+}
+
+input[type=submit]{
+    background-color: #2E4053;
+    color: white;
+    font-weight: 600;
+    padding: 1em 0.5em; /* 0.8 i top og bund og 1.5em i siderne */
+    border: none;
+    border-radius: 40px;
+    font-size: 20px;
+    width: 40%;
+    text-transform: uppercase;
+}
+
+input[type=submit]:hover{
+    background-color: #6A8AB8;
+}
+
+
+::placeholder{ /* Ændre farven på den udtydelige skrift i felterne */
+    color: #5A7896;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+/* Andre style elementer */
+
+.visually-hidden{ /* WCAG defineret class som fjerner element fra skærm. men som stadig kan læses af skærmlæseren */
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+/* DESKTOP VERSION */
+@media screen and (min-width: 800px) {
+
+                                                        /* FORSIDE */
+
+.tekst-1 .break, .tekst-3 .break { /* bryder teksten */
+        display: inline; 
+    }
+
+/* Header */
+
+#bars{ /* Burgermenu */
+    display: none;
+}    
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em 3em;
+    margin-top: -70px;
+    width: 100%;
+    background: none;
+    
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 60%;
+}
+
+nav ul li{
+    margin: 0;
+}
+
+nav ul li a{
+    font-size: 16px;
+}
+
+.svg-jorden{
+    display: flex;
+    width: 40px;
+    fill: #D4E4EF;
+    cursor: pointer;
+}
+
+/* Hovedindhold */
+
+.hovedindhold{ /* Deler indholdet op */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.tekst-1{grid-column: 1; grid-row: 1;}
+.img-kopper{grid-column: 2; grid-row: 1;}
+
+.img-strik{grid-column: 1; grid-row: 2;}
+.tekst-2 {grid-column: 2; grid-row: 2;}
+
+.tekst-1, .tekst-2{
+    background-color: transparent; /* fjerner den mørke baggrund */
+    color: #2E4053;
+    
+}
+
+/* Footer */
+
+
+.desktop-only{
+    display: flex; /* vises */
+    justify-content: space-between;
+}
+.desktop-only ul, .desktop-only{
+    color: #fff;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.desktop-only ul:hover{
+    color: #6A8AB8;
+    transition: 0.3s;
+    text-decoration: underline;
+}
+
+footer{
+    justify-content: space-between;
+    align-items: center;
+}
+
+#darkmode-toggle{ /* id tag */
+    display: none; /* skjuler checkboxen */
+}
+
+.toggle{ /* Toggle knappen */
+    width: 60px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s; /* giver en pænere overgang */
+    position: relative;
+}
+
+.toggle::after{ /* Prikken i midten af knappen */
+    content: ""; /* et element uden tekst - cirkel */
+    width: 22px;
+    height: 22px;
+    background-color: #2E4053;
+    border-radius: 50%;
+    position: absolute;
+    left: 4px;
+}
+
+#darkmode-toggle:checked + .toggle{
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+#darkmode-toggle:checked + .toggle::after{ /* Når knappen trykkes på rykkes cirklen 27px til højre */
+    transform: translateX(27px); /* 27px fordi den er 30px i alt men har fået border på */
+    background-color: white;
+}
+
+                                                        /* INFOSIDE */
+.ikoner{
+   display: flex;
+   justify-content: center;
+   
+}
+
+.ikoner img{
+    height: 150px;
+}
+
+.tekst-4{
+    margin-left: 2em;
+    margin-top: 2em;
+    padding: 1em;
+    border-radius: 60px;
+}
+
+
+.tekst-4 h2{
+    font-size: 30px;
+}
+
+.tekst-4 p{
+    font-size: 20px;
+}
+.bund-sektion{ /* Deler indholdet op */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.tekst-4{grid-column: 1; grid-row: 1;}
+.bund-sektion img {grid-column: 2; grid-row: 1;}
+
+                                                        /* KONTAKTFORMULAR */
+
+
+}
