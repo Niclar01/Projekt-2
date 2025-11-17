@@ -74,7 +74,7 @@ nav ul{
 nav ul li a{ /* nav --> ul --> li --> a */
     color: #fff;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.3em;
     font-weight: 500;
     text-transform: uppercase;
     cursor: pointer;
@@ -100,7 +100,7 @@ nav ul li a:hover{
 .banner h1{
     color: #fff;
     text-transform: uppercase;
-    font-size: 60px;
+    font-size: 4em;
     font-weight: 700;
     text-align: center;
     padding: 1.5em 1em;
@@ -117,7 +117,7 @@ nav ul li a:hover{
 }
 
 .tekst-1 h2, .tekst-2 h2, .tekst-3 h2, .tekst-4 h2{
-    font-size: 40px;
+    font-size: 2.5em;
     text-transform: uppercase;
     text-align: center;
 }
@@ -128,7 +128,7 @@ nav ul li a:hover{
 
 .tekst-1 p, .tekst-2 p, .tekst-3 p, .tekst-4 p{
     text-align: center;
-    font-size: 20px;
+    font-size: 1.5em;
     padding: 1em 2em;
 
 }
@@ -137,12 +137,12 @@ nav ul li a:hover{
     background-color: #2E4053;
     color: #fff;
     text-transform: uppercase;
-    border: 0;
+    border: 5px solid #1A2531;
     border-radius: 66px;
-    font-size: 20px;
+    font-size: 1.3em;
     font-weight: 600;
     font-family: "brandon-grotesque", sans-serif;
-    padding: 0.7em 1em;
+    padding: 0.4em 2em;
     display: block;
     margin: 0 auto;
     cursor: pointer;
@@ -200,7 +200,7 @@ footer .logo-bund{
 .info-overskrift{
     text-align: center;
     color: #2E4053;
-    font-size: 50px; /* ændret fra 60px */
+    font-size: 3em;
     font-weight: 800;
     text-transform: uppercase;
     margin-top: 50px;
@@ -229,7 +229,7 @@ footer .logo-bund{
 .ikoner p{
     color: #2E4053;
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 2em;
     font-weight: 700;
 }
 
@@ -260,7 +260,7 @@ footer .logo-bund{
 }
 .banner-2 h1{
     color: #fff;
-    font-size: 30px;
+    font-size: 1.8em;
     font-weight: 400;
     text-align: center;
     padding: 4.5em 1em;
@@ -274,14 +274,14 @@ footer .logo-bund{
 }
 .kontakt-tekst{
     font-weight: 200;
-    font-size: 20px;
+    font-size: 1.2em;
     text-align: center;
     margin-bottom: 1em;
 }
 
 .kontakt-tekst-2{
     font-weight: 200;
-    font-size: 20px;
+    font-size: 1.2em;
     text-align: center;
 }
 
@@ -291,32 +291,34 @@ footer .logo-bund{
     padding: 1.3em;
     width: 70%; /* Fylder 70% af siden i bredden */
     margin: 0 auto; /* Centrerer elementet på siden*/
-    padding: 2em 3em 2em;
+    padding: 2em 1.1em 2em;
     margin-top: 2em;
 }
 
-input[type=text], input[type=email], input[type=tel], select, textarea{
+input[type=text], input[type=email], input[type=tel], textarea{
     width: 100%; /* fylder hele bredden i boksen */
-    padding: 1em; /* laver skrivefeltet større */
+    padding: 1.2em; /* laver skrivefeltet større */
     border: 2px solid #2E4053;  /* stroke rundt om felterne */
     border-radius: 30px; /* afrundede kanter */
     margin-top: 0.5em; /* afstand over feltet */
     margin-bottom: 1em; /* afstand under feltet */
 }
 
-select, input[type=checkbox], input[type=radio], input[type=submit]{
+select, input[type=checkbox], input[type=submit]{
     cursor: pointer; /* Skaber brugervenlighed så man kan se at man kan trykke på knappen */    
 }
 
 fieldset{
     border-style: hidden; /* stroke rundt om feltet - skriv "hidden" i stedet for "dotted" hvis den ikke skal være der */
     margin-bottom: 0.8em; /* mere plads under fieldset (begge) */
+    font-size: 1.2em;
 }
 
 input[type=checkbox]{
     margin: 0.8em 0; /* mere plads i top og bund men ingenting i siderne */
 }
 
+/* Send - knap */
 input[type=submit]{
     background-color: #2E4053;
     color: white;
@@ -324,7 +326,7 @@ input[type=submit]{
     padding: 1em 0.5em; /* 0.8 i top og bund og 1.5em i siderne */
     border: none;
     border-radius: 40px;
-    font-size: 20px;
+    font-size: 1.3em;
     width: 40%;
     text-transform: uppercase;
 }
@@ -366,9 +368,10 @@ input[type=submit]:hover{
 
                                                         /* FORSIDE */
 
-.tekst-1 .break, .tekst-3 .break { /* bryder teksten */
+.tekst-1 .break, .tekst-3 .break, .banner .break { /* bryder teksten */
         display: inline; 
     }
+
 
 /* Header */
 
@@ -407,7 +410,7 @@ nav ul li{
 }
 
 nav ul li a{
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .svg-jorden{
@@ -417,25 +420,68 @@ nav ul li a{
     cursor: pointer;
 }
 
-/* Hovedindhold */
-
-.hovedindhold{ /* Deler indholdet op */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
+/* Banner */
+.banner{
+    padding-top: 3em;
 }
 
-.tekst-1{grid-column: 1; grid-row: 1;}
-.img-kopper{grid-column: 2; grid-row: 1;}
+/* Hovedindhold */
 
-.img-strik{grid-column: 1; grid-row: 2;}
-.tekst-2 {grid-column: 2; grid-row: 2;}
+/* Opdeler indhold i rækker med 1 tekst + 1 billede */
+.sektion-1{
+    display: flex;
+    flex-direction: row;
+}
+.tekst-1, .sektion-1 img{
+    width: 50%;
+}
 
+.sektion-2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.tekst-2, .sektion-2 img{
+    width: 50%;
+}
 .tekst-1, .tekst-2{
     background-color: transparent; /* fjerner den mørke baggrund */
     color: #2E4053;
     
 }
+
+/* Sektion 1 */
+.tekst-1{
+    margin-top: 0;
+    margin-left: 2em; /* Rykker teksten ind mod midten */
+    padding-top: 5em; /* Rykker teksten længere ned */
+    padding-bottom: 0; /* Fjerner plads i bunden */
+}
+
+.tekst-1 h2{
+    font-size: 1.9em; 
+}
+
+.tekst-1 p{
+    padding: 1em; /* Mindre plads omkring tekst */
+}
+
+.tekst-1 button{
+    border-radius: 66px;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 0.5em 2em;
+}
+.sektion-1 img{
+    border-radius: 90px; /* pænere kanter */
+}
+
+/* Sektion 2 */
+
+.tekst-2 h2{
+    font-size: 1.9em;
+}
+
 
 /* Footer */
 
@@ -448,7 +494,7 @@ nav ul li a{
     color: #fff;
     text-decoration: none;
     list-style-type: none;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 500;
     text-transform: uppercase;
     cursor: pointer;
@@ -513,28 +559,37 @@ footer{
 }
 
 .tekst-4{
-    margin-left: 2em;
-    margin-top: 2em;
-    padding: 1em;
+    
+    margin: 3em 1.5em 3em 3em;
+    padding: 3em 0;
     border-radius: 60px;
 }
 
 
-.tekst-4 h2{
-    font-size: 30px;
+.tekst-4 h2, .tekst-3 h2{
+    font-size: 1.9em;
+}
+
+.tekst-4 p, .tekst-3 p{
+    font-size: 1.5em;
 }
 
 .tekst-4 p{
-    font-size: 20px;
-}
-.bund-sektion{ /* Deler indholdet op */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
+    padding: 0.5em 1em;
 }
 
-.tekst-4{grid-column: 1; grid-row: 1;}
-.bund-sektion img {grid-column: 2; grid-row: 1;}
+.bund-sektion img{
+    padding: 3em 3em 3em 1.5em;
+}
+
+/* Opdeler indhold i rækker med 1 tekst + 1 billede */
+.bund-sektion{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.tekst-4, .bund-sektion img{
+    width: 50%;
+}
 
                                                         /* KONTAKTFORMULAR */
 
