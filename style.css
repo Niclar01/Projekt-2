@@ -290,21 +290,23 @@ footer .logo-bund{
     background-color: #5A7896;
     padding: 1.3em;
     width: 70%; /* Fylder 70% af siden i bredden */
-    margin: 0 auto; /* Centrerer elementet på siden*/
+    margin: 2em auto; /* Centrerer elementet på siden*/
     padding: 2em 1.1em 2em;
-    margin-top: 2em;
+  
 }
 
+/* Hvide input bokse */
 input[type=text], input[type=email], input[type=tel], textarea{
     width: 100%; /* fylder hele bredden i boksen */
     padding: 1.2em; /* laver skrivefeltet større */
-    border: 2px solid #2E4053;  /* stroke rundt om felterne */
+    border: 3px solid #1A2531;  /* stroke rundt om felterne */
     border-radius: 30px; /* afrundede kanter */
     margin-top: 0.5em; /* afstand over feltet */
     margin-bottom: 1em; /* afstand under feltet */
 }
 
-select, input[type=checkbox], input[type=submit]{
+/* Cursor på checkbokse og knap */
+input[type=checkbox], input[type=submit]{
     cursor: pointer; /* Skaber brugervenlighed så man kan se at man kan trykke på knappen */    
 }
 
@@ -314,8 +316,10 @@ fieldset{
     font-size: 1.2em;
 }
 
+/* Hvide checkbox felter */
 input[type=checkbox]{
-    margin: 0.8em 0; /* mere plads i top og bund men ingenting i siderne */
+    margin: 0.8em 1em 0; /* mere plads i top og bund men ingenting i siderne */
+    transform: scale(1.6);
 }
 
 /* Send - knap */
@@ -324,7 +328,7 @@ input[type=submit]{
     color: white;
     font-weight: 600;
     padding: 1em 0.5em; /* 0.8 i top og bund og 1.5em i siderne */
-    border: none;
+    border: 5px solid #1A2531;
     border-radius: 40px;
     font-size: 1.3em;
     width: 40%;
@@ -337,7 +341,7 @@ input[type=submit]:hover{
 
 
 ::placeholder{ /* Ændre farven på den udtydelige skrift i felterne */
-    color: #5A7896;
+    color: #5a789697;
     text-transform: uppercase;
     font-weight: 600;
 }
