@@ -308,6 +308,11 @@ input[type=text], input[type=email], input[type=tel], textarea{
     margin-bottom: 1em; /* afstand under feltet */
 }
 
+/* Viser rød kant hvis man ikke har tastet */
+input:invalid:not(:placeholder-shown){
+    border-color: red;
+}
+
 /* Cursor på checkbokse og knap */
 input[type=checkbox], input[type=submit]{
     cursor: pointer; /* Skaber brugervenlighed så man kan se at man kan trykke på knappen */    
@@ -408,7 +413,7 @@ header{
 nav{
     display: flex;
     justify-content: flex-end;
-    padding: 1em 3em;
+    padding: 1em 2em;
     margin-top: -70px;
     width: 100%;
     background: none;
@@ -429,7 +434,7 @@ nav ul li{
 }
 
 nav ul li a{
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 .svg-jorden{
