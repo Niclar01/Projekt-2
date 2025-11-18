@@ -367,7 +367,7 @@ input[type=submit]:hover{
 
 
 
-/* DESKTOP VERSION */
+/* TABLET VERSION */
 @media screen and (min-width: 800px) {
 
                                                         /* FORSIDE */
@@ -454,15 +454,15 @@ nav ul li a{
     
 }
 
-/* Sektion 1 */
+/* Sektion 1 + 2 */
 .tekst-1{
     margin-top: 0;
-    margin-left: 2em; /* Rykker teksten ind mod midten */
+    margin-left: 3em; /* Rykker teksten ind mod midten */
     padding-top: 5em; /* Rykker teksten længere ned */
     padding-bottom: 0; /* Fjerner plads i bunden */
 }
 
-.tekst-1 h2{
+.tekst-1 h2, .tekst-2 h2{
     font-size: 1.9em; 
 }
 
@@ -470,22 +470,35 @@ nav ul li a{
     padding: 1em; /* Mindre plads omkring tekst */
 }
 
+.tekst-2 p{
+    margin-right: 2em;
+}
+
+ .tekst-1 p, .tekst-1 h2{
+        padding-left: 0;
+        padding-right: 0;
+        text-align: left;
+    }
+
+     .tekst-2 p, .tekst-2 h2{
+        padding-left: 0;
+        padding-right: 0;
+        text-align: left;
+    }
+
 .tekst-1 button{
     border-radius: 66px;
     font-size: 1.2em;
     font-weight: 600;
     padding: 0.5em 2em;
+    margin-left: 0em;
+    
 }
-.sektion-1 img{
+.sektion-1 img, .sektion-2 img{
     border-radius: 90px; /* pænere kanter */
+    height: auto;
+    object-fit: cover; /* Udfylder sektionen og beskæres */
 }
-
-/* Sektion 2 */
-
-.tekst-2 h2{
-    font-size: 1.9em;
-}
-
 
 /* Footer */
 
@@ -584,6 +597,8 @@ footer{
 
 .bund-sektion img{
     padding: 3em 3em 3em 1.5em;
+    height: auto;
+    object-fit: cover; /* Udfylder sektionen og beskæres */
 }
 
 /* Opdeler indhold i rækker med 1 tekst + 1 billede */
@@ -596,6 +611,70 @@ footer{
 }
 
                                                         /* KONTAKTFORMULAR */
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* DESKTOP VERSION */
+@media screen and (min-width: 1024px) {
+
+
+    .tekst-1 p, .tekst-2 p, .tekst-3 p, .tekst-4 p{
+        font-size: 2em;
+    }
+
+    .tekst-1 h2, .tekst-2 h2, .tekst-3 h2, .tekst-4 h2{
+        font-size: 2.5em;
+    }
+
+                                                         /* FORSIDE */
+    .tekst-1 p, .tekst-1 h2{
+        padding-left: 0;
+        padding-right: 0;
+        text-align: left;
+    }
+
+     .tekst-2 p, .tekst-2 h2{
+        padding-left: 0;
+        padding-right: 0;
+        text-align: left;
+    }
+
+
+                                                        /* KONTAKTFORMULAR */
+    .kontaktform h1{
+        font-size: 3em;
+    }
+    .kontakt-tekst, .kontakt-tekst-2{
+        font-size: 2em;
+    }
+
+    /* Hvide input bokse */
+    input[type=text], input[type=email], input[type=tel], textarea{
+        padding: 1.8em; 
+        border: 4px solid #1A2531;
+        border-radius: 40px;
+    }
+    .kontaktform{
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+
+    ::placeholder{
+        font-size: 1.7em;
+    }
+
 
 
 }
