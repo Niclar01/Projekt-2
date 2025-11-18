@@ -314,6 +314,7 @@ fieldset{
     border-style: hidden; /* stroke rundt om feltet - skriv "hidden" i stedet for "dotted" hvis den ikke skal være der */
     margin-bottom: 0.8em; /* mere plads under fieldset (begge) */
     font-size: 1.2em;
+    padding: 0.5em;
 }
 
 /* Hvide checkbox felter */
@@ -322,8 +323,14 @@ input[type=checkbox]{
     transform: scale(1.6);
 }
 
+.tekst-box label{
+        font-size: 1.2em;
+        padding-left: 0.5em;
+    }
+
 /* Send - knap */
 input[type=submit]{
+    margin: 0 auto;
     background-color: #2E4053;
     color: white;
     font-weight: 600;
@@ -333,6 +340,11 @@ input[type=submit]{
     font-size: 1.3em;
     width: 40%;
     text-transform: uppercase;
+}
+
+.send-knap{
+    display: flex;
+    justify-content: center;
 }
 
 input[type=submit]:hover{
@@ -612,8 +624,37 @@ footer{
 
                                                         /* KONTAKTFORMULAR */
 
+.kontaktform h1{
+        font-size: 2.5em;
+    }
+    .kontakt-tekst, .kontakt-tekst-2, .checkbox, .tekst-box label{
+        font-size: 1.5em;
+    }
 
+    /* Hvide input bokse */
+    input[type=text], input[type=email], input[type=tel], textarea{
+        padding: 1.8em; 
+        border: 4px solid #1A2531;
+        border-radius: 40px;
+    }
+    .kontaktform{
+        padding-left: 4em;
+        padding-right: 4em;
+    }
 
+    ::placeholder{
+        font-size: 1.3em;
+    }
+
+    .crafts{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .tekst-box label{
+        padding-left: 0.5em;
+    }
 }
 
 
@@ -654,10 +695,10 @@ footer{
 
                                                         /* KONTAKTFORMULAR */
     .kontaktform h1{
-        font-size: 3em;
+        font-size: 2.7em;
     }
-    .kontakt-tekst, .kontakt-tekst-2{
-        font-size: 2em;
+    .kontakt-tekst, .kontakt-tekst-2, .checkbox, .tekst-box label{
+        font-size: 1.7em;
     }
 
     /* Hvide input bokse */
@@ -669,10 +710,6 @@ footer{
     .kontaktform{
         padding-left: 5em;
         padding-right: 5em;
-    }
-
-    ::placeholder{
-        font-size: 1.7em;
     }
 
 

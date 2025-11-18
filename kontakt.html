@@ -58,6 +58,7 @@
             <!-- Chechbox af services -->
              <fieldset class="checkbox">
                 <legend>Hvilken type craft interesserer dig?</legend>
+                <div class="crafts">
                 <div>
                     <input id="strik" type="checkbox">
                     <label for="strik">Strik</label>
@@ -72,24 +73,30 @@
                     <input id="broderi" type="checkbox">
                     <label for="broderi">Broderi</label>
                 </div>
-
+                </div>
+                
                 <div> 
                     <input id="andet" type="checkbox">
                     <label for="andet">Andet <br>(uddyb i kommentarfeltet nedenfor)</label>
                 </div>
+                
              </fieldset>
 
              <!-- Besked felt -->
-             <label for="besked">Kommentarfelt</label>
-             <textarea id="besked" cols="30" rows="10"></textarea>
+            <div class="tekst-box">
+                <label for="besked">Kommentarfelt</label>
+                <textarea id="besked" cols="30" rows="10"></textarea>
+             </div>
 
 
             <!-- Knap til send  - bruges ofte og mest til knapper til en form for aktion -->
-             <input type="submit" name="submit" value="send">
+            <div class="send-knap">
+            <input type="submit" name="submit" value="send">
+            </div> 
 
         </form>
      </main>
-     
+
 <!-- Footer -->
      <footer>
             <section class="desktop-only">
