@@ -518,8 +518,9 @@ nav ul li a{
 .desktop-only{
     display: flex; /* vises */
     justify-content: space-between;
+    margin-right: 2em;
 }
-.desktop-only ul, .desktop-only{
+.desktop-only ul li a, .desktop-only ul{
     color: #fff;
     text-decoration: none;
     list-style-type: none;
@@ -529,7 +530,7 @@ nav ul li a{
     cursor: pointer;
 }
 
-.desktop-only ul:hover{
+.desktop-only ul li a:hover{
     color: #6A8AB8;
     transition: 0.3s;
     text-decoration: underline;
