@@ -25,6 +25,8 @@ header{
     font-weight: 600;
     font-size: 30px;
     cursor: pointer;
+    color: white;
+    text-decoration: none;
 }
 
 .svg-jorden{
@@ -183,6 +185,7 @@ footer .logo-bund{
     color: #fff;
     text-align: center;
     cursor: pointer;
+    text-decoration: none;
 }
 .logo-bund:hover{
     color: #6A8AB8;
@@ -541,8 +544,13 @@ footer{
     align-items: center;
 }
 
-#darkmode-toggle{ /* id tag */
-    display: none; /* skjuler checkboxen */
+.toggle-knap input[type="checkbox"]{ /* id tag */
+    /* skjuler checkboxen */
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    
 }
 
 .toggle{ /* Toggle knappen */
