@@ -129,16 +129,15 @@ nav ul li a:hover{
 }
 
 .tekst-1 p, .tekst-2 p, .tekst-3 p, .tekst-4 p{
-    text-align: center;
+    text-align: left;
     font-size: 1.5em;
     padding: 1em 2em;
 
+
 }
 
-.tekst-1 button{
+.tekst-1 button {
     background-color: #2E4053;
-    color: #fff;
-    text-transform: uppercase;
     border: none;
     border-radius: 66px;
     box-shadow: 0 4px 8px 0 #4F647A; /* vandret, nedad, blødhed, spread, farve */
@@ -149,6 +148,12 @@ nav ul li a:hover{
     display: block;
     margin: 0 auto;
     cursor: pointer;
+}
+
+.tekst-1 button a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 .tekst-1 button:hover{
