@@ -29,10 +29,6 @@ header{
     text-decoration: none;
 }
 
-.svg-jorden{
-    display: none;
-}
-
 #bars{ /* # bruges til at kalde på et id tag */
         color: #fff;
         background-color: #4F647A;
@@ -91,6 +87,10 @@ nav ul li a:hover{
     border-bottom: 4px solid #D4E4EF;
 }
 
+.english{
+    display: none;
+}
+
 
 /* Banner billede */
 .banner{
@@ -139,8 +139,9 @@ nav ul li a:hover{
     background-color: #2E4053;
     color: #fff;
     text-transform: uppercase;
-    border: 5px solid #1A2531;
+    border: none;
     border-radius: 66px;
+    box-shadow: 0 4px 8px 0 #4F647A; /* vandret, nedad, blødhed, spread, farve */
     font-size: 1.3em;
     font-weight: 600;
     font-family: "brandon-grotesque", sans-serif;
@@ -343,7 +344,8 @@ input[type=submit]{
     color: white;
     font-weight: 600;
     padding: 1em 0.5em; /* 0.8 i top og bund og 1.5em i siderne */
-    border: 5px solid #1A2531;
+    border: none;
+    box-shadow: 0 4px 8px 0 #4F647A;
     border-radius: 40px;
     font-size: 1.3em;
     width: 40%;
@@ -437,11 +439,8 @@ nav ul li a{
     font-size: 0.9em;
 }
 
-.svg-jorden{
-    display: flex;
-    width: 40px;
-    fill: #D4E4EF;
-    cursor: pointer;
+.english{
+    display: block;
 }
 
 /* Banner */
@@ -712,7 +711,7 @@ footer{
         font-size: 2.7em;
     }
     .kontakt-tekst, .kontakt-tekst-2, .checkbox, .tekst-box label{
-        font-size: 1.7em;
+        font-size: 1.8em;
     }
 
     /* Hvide input bokse */
@@ -725,6 +724,7 @@ footer{
         padding-left: 5em;
         padding-right: 5em;
     }
+
 
 
 
