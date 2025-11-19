@@ -254,7 +254,6 @@ footer .logo-bund{
                                                         /* KONTAKTFORMULAR */
 
 /* Nav */
-
 .kontakt{
     border-bottom: 4px solid #e9e1d6;
     
@@ -273,6 +272,19 @@ footer .logo-bund{
     font-weight: 400;
     text-align: center;
     padding: 4.5em 1em;
+}
+
+/* Nudging tekst */
+.nudging-tekst{
+    border-radius: 40px;
+    border-style: dashed;
+    border-color: #8a7160;
+    font-size: 1em;
+    color: #2a2018;
+    text-align: center;
+    width: 70%; /* Fylder 70% af siden i bredden */
+    margin: 2em auto; /* Centrerer elementet på siden*/
+    padding: 1em;
 }
 
 /* Kontaktformular */
@@ -297,7 +309,6 @@ footer .logo-bund{
 .kontaktform {
     border-radius: 40px;
     background-color: #7b5e4a;
-    padding: 1.3em;
     width: 70%; /* Fylder 70% af siden i bredden */
     margin: 2em auto; /* Centrerer elementet på siden*/
     padding: 2em 1.1em 2em;
@@ -672,6 +683,10 @@ footer{
     .tekst-box label{
         padding-left: 0.5em;
     }
+
+    .nudging-tekst{
+        font-size: 1.3em;
+    }
 }
 
 
@@ -726,7 +741,9 @@ footer{
         padding-left: 5em;
         padding-right: 5em;
     }
-
+    .nudging-tekst{
+        font-size: 1.7em;
+    }
 
 
 
