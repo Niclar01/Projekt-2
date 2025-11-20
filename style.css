@@ -72,7 +72,7 @@ nav ul{
 nav ul li a{ /* nav --> ul --> li --> a */
     color: #fff;
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 0.9em;
     font-weight: 500;
     text-transform: uppercase;
     cursor: pointer;
@@ -94,6 +94,9 @@ nav ul li a:hover{
 
 /* Banner billede */
 .banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url(img/IMG_8062.jpg);
     background-size: cover;
     background-position: left;
@@ -102,10 +105,10 @@ nav ul li a:hover{
 .banner h1{
     color: #fff;
     text-transform: uppercase;
-    font-size: 4em;
+    font-size: 3.6em;
     font-weight: 700;
     text-align: center;
-    padding: 1.5em 1em;
+    padding: 0;
 }
 
 /* Hovedindhold */
@@ -147,7 +150,7 @@ nav ul li a:hover{
     padding: 0.4em 2em;
     text-align: center;
     cursor: pointer;
-    margin: 0 4em;
+    margin: 0 2em;
 }
 
 .tekst-1-knap a{
@@ -410,7 +413,7 @@ input[type=submit]:hover{
 
                                                         /* FORSIDE */
 
-.tekst-1 .break, .tekst-3 .break, .banner .break { /* bryder teksten */
+.tekst-1 .break, .tekst-3 .break, .banner .break{ /* samler teksten til én linje */
         display: inline; 
     }
 
@@ -459,10 +462,6 @@ nav ul li a{
     display: block;
 }
 
-/* Banner */
-.banner{
-    padding-top: 3em;
-}
 
 /* Hovedindhold */
 
